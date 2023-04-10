@@ -22,6 +22,6 @@ import sideBar from "@/components/Account/sideBar.vue"
             this.$appAxios.get("/bookmarks?_expand=category&_expand=user").then(res=>{
                 this.bookmarkList = res?.data || []
             })
-        },
+        }
     }
 </script>
